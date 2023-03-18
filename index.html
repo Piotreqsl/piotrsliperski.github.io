@@ -17,14 +17,13 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>[Your name here] | Developer</title>
+    <title>Piotr Śliperski| Developer</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta name="keywords" content="Piotr, Śliperski, portfolio, developer" />
 
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Piotr Śliperski | Developer" />
 
     <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
     <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
@@ -37,9 +36,9 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Fill content with the URL of this portfolio you'll host -->
     <meta property="og:url" content="https://devfolio.js.org/" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
+    <meta property="og:title" content="Piotr Śliperski | Developer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
+    <meta property="og:description" content="Piotr Śliperski portfolio" />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
@@ -83,34 +82,22 @@ Have fun creating your portfolio on this template!!! -->
       src="./javascript/scrollveal.js"
     ></script>
 
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+      defer
+      type="text/javascript"
+      src="./javascript/anime.min.js"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
   </head>
   <body>
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
         <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
+          Hi, my name is
+          <span class="text-color-main name">Piotr Śliperski</span>
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+          <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -127,7 +114,7 @@ Have fun creating your portfolio on this template!!! -->
           <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./assets/profile.png"
+              src="./assets/me_about.jpg"
               alt="Profile Image"
               width="450"
               height="350"
@@ -135,17 +122,15 @@ Have fun creating your portfolio on this template!!! -->
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-              architecto cumque veritatis adipisci. Sapiente non, saepe hic
-              adipisci doloribus quisquam recusandae et.
+              I'm Piotr Śliperski, Computer Science student at AGH UST in
+              Cracow. Currently learning microservices and cloud computing. I'm
+              also interested in web development and devops.
             </p>
             <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              obcaecati doloribus qui praesentium quae veniam esse mollitia
-              consequuntur nisi minima quasi et fugit quidem enim recusandae
-              delectus, iusto culpa rerum?
+              In my free time I like to reset my mind by running, read some
+              philosophical stuff and hang out with my mates.
             </p>
+
             <span class="about-wrapper__cta">
               <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
             </span>
@@ -164,32 +149,41 @@ Have fun creating your portfolio on this template!!! -->
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Stolica eXperymentu</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Whole system for educational project based in Gniezno. It
+                involwes event scheduling, payment system, kiosk displays
+                management and many more. <br />
+                Technologies I used: Node.js, React, self hosted Kubernetes
+                cluster, Rabbit MQ, Prometheus, Grafana, Nginx, Skaffold, Lens,
+                and so on...
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="http://51.75.39.249/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
+                <a
+                  onclick="showReveal('stolica')"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Screenshots</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://51.75.39.249/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/Stolica.jpg"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -199,28 +193,122 @@ Have fun creating your portfolio on this template!!! -->
               </a>
             </div>
           </article>
+
+          <!-- Hideable section to display more screenshots-->
+          <div class="reveal reveal-hidden" id="stolica">
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">News view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stolica_images/Screenshot_1.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Event calendar view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stolica_images/Screenshot_2.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Panel view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stolica_images/Screenshot_3.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Events view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stolica_images/Screenshot_5.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Lens k8s dashboard</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stolica_images/Screenshot_6.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Archiwum Gniezno</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Project made for local authorithies in Gniezno. It helps
+                organizing documents (printed on paper) in city hall. You can
+                also attach virtual notes and files to each document. This
+                project is used every day by dozens of employees. <br />
+                Technologies I used: Node.js, React, MongoDB, PM2, Electron,
+                lists virtualization.
               </p>
               <div class="project-wrapper__text-btns">
-                <a
+                <!-- <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
+                > -->
+                <a
+                  onclick="showReveal('rotomat')"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Screenshots</a
                 >
               </div>
             </div>
@@ -229,7 +317,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/Rotomat/icon.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -239,28 +327,91 @@ Have fun creating your portfolio on this template!!! -->
               </a>
             </div>
           </article>
+
+          <div class="reveal reveal-hidden" id="rotomat">
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Home view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Rotomat/S1.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">
+                  User management and backup section
+                </div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Rotomat/Screenshot_2.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Document view</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Rotomat/Screenshot_1.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">PSZOK Gniezno</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Project for recycling centre in Gniezno. It helps to identify
+                people who come to throw out some rubbish by scanning their QR
+                codes. Dwellers can track how much they threw out and city
+                officials can impose penalties for exceeding the limit. There
+                are over 30k people who already used this system<br />
+                Technologies I used: Node.js, React, MongoDB, PM2, Electron.
+                This system also needed to integrate with external software
+                present in the recycling centre.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://pszok.gniezno.eu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
+                <a
+                  onclick="showReveal('pszok')"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Screenshots</a
                 >
               </div>
             </div>
@@ -269,7 +420,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/Pszok/Icon.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -279,6 +430,182 @@ Have fun creating your portfolio on this template!!! -->
               </a>
             </div>
           </article>
+
+          <div class="reveal reveal-hidden" id="pszok">
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Qr code generator</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/pszok/Screenshot_1.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Rubish tracker</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Pszok/Screenshot_2.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Employee panel</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Pszok/Screenshot_3.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Add new user modal</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Pszok/Screenshot_5.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">KOOS</h3>
+              <p class="project-wrapper__text-info">
+                One of the most complicated system i've made. Unfortunately it's
+                no longer used.<br />
+                KOOS is a tool for detailed control of thrown out rubbish.
+                Everyone attempting physical container needs to scan card and
+                waste. Then electric engine moves that rubbish around, so that
+                camera can catch everything. Short footage captured by camera is
+                then analyzed by employee (to be replaced with AI). If there is
+                any problem system can generate report which may be processed in
+                future. Technologies I used: Node.js, Electron, React, FFmpeg,
+                Postgresql, MongoDB, own OpenVPN setup, Arduino, Raspberry pi,
+                integration with external camera system.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="/assets/Koos/KOOS - interfejs.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Summary</a
+                >
+                <a
+                  onclick="showReveal('koos')"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Screenshots & video</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/koos/Screenshot_1.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <div class="reveal reveal-hidden" id="koos">
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">How it works in reality</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <video
+                    onclick="this.play()"
+                    src="./assets/Koos/video.mp4"
+                    alt="Project Image"
+                    autoplay
+                    muted
+                    loop
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Raport generated by KOOS</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Koos/raport.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="revealBox">
+              <div class="revealText">
+                <div class="revealHeader">Event evaluation panel</div>
+              </div>
+              <div class="revealImage">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Pszok/event.png"
+                    class="img-fluid img-reveal"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- /END Project -->
         </div>
       </div>
@@ -290,8 +617,12 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">piotr.sliperski@yahoo.com</p>
+          <a
+            href="mailto:piotr.sliperski@yahoo.com"
+            class="cta-btn cta-btn--resume"
+            >Send me a message</a
+          >
         </div>
       </div>
     </section>
@@ -304,32 +635,32 @@ Have fun creating your portfolio on this template!!! -->
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a
+          <!-- <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="twitter"
           >
             <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="instagram"
           >
             <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="codepen"
           >
             <i class="fa-brands fa-codepen"></i>
-          </a>
+          </a> -->
           <a
-            href="#!"
+            href="https://www.linkedin.com/in/piotr-%C5%9Bliperski-682560213/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -337,7 +668,7 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/Piotreqsl"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
@@ -346,21 +677,13 @@ Have fun creating your portfolio on this template!!! -->
           </a>
         </div>
         <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
-        </p>
+        <p class="footer__text"><span id="year"></span> Piotr Śliperski</p>
       </div>
     </footer>
     <!-- END Footer Section -->
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>

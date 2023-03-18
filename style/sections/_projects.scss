@@ -3,6 +3,7 @@
   color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
+  transition: 0.3s;
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
@@ -18,6 +19,7 @@
     .row {
       margin: 0;
       margin-bottom: 8rem;
+      transition: 0.3s;
       @include respond(phone) {
         margin-bottom: 4rem;
       }
@@ -77,6 +79,56 @@
           border: 1px solid #d2d2d2;
           margin-bottom: 3.2rem;
           transform: none;
+        }
+      }
+    }
+  }
+
+  .reveal {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 0.5s;
+    max-height: 0;
+    transform: translateX(-100%);
+    &-show {
+      max-height: fit-content;
+      transition: 0.3s;
+    }
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+
+    .revealBox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8rem;
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
+
+      .revealText {
+        margin-bottom: 0.5rem;
+        .revealHeader {
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+        }
+        .revealDesc {
+          font-size: 1.8rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .revealImage {
+        .img-reveal {
+          max-width: 100%;
+
+          height: auto;
         }
       }
     }

@@ -62,6 +62,19 @@ ScrollReveal().reveal(".project-wrapper__image", {
   origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
+// ScrollReveal().reveal(".revealText", {
+//   ...defaultProps,
+//   delay: 600,
+//   origin: window.innerWidth > 768 ? "left" : "bottom",
+// });
+
+// ScrollReveal().reveal(".revealImage", {
+//   ...defaultProps,
+//   delay: 600,
+//   scale: 0.9,
+//   origin: window.innerWidth > 768 ? "right" : "bottom",
+// });
+
 /* Contact Section */
 ScrollReveal().reveal(".contact-wrapper", {
   ...defaultProps,
@@ -73,3 +86,16 @@ ScrollReveal().reveal(".fa", {
   delay: 500,
   interval: 100,
 });
+
+function showReveal(target) {
+  document.getElementById(target).classList.add("reveal-show");
+  anime({
+    targets: ".reveal#" + target,
+    translateX: "0%",
+    delay: anime.stagger(100, { from: "center" }),
+  });
+}
+
+function play() {
+  document.getElementById(".video").load().play();
+}
